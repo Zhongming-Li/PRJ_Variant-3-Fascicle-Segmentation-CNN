@@ -43,7 +43,11 @@ arg:
 
 
 
-testing with different argument passing to check error handling 
+## References
+
+- Repository: [DL Track](https://github.com/njcronin/DL_Track.git)
+  - Paper: [Fully automated analysis of muscle architecture from B-mode ultrasound images with deep learning](https://arxiv.org/abs/2009.04790)
+  - Description: A deep learning approach for analysing muscle architecture from musculoskeletal ultrasound images.
 
 
 
