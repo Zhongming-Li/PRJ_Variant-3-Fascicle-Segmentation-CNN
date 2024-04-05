@@ -12,6 +12,9 @@ pip install -r requirements.txt
 
 
 ## Usage
+#### Software
+To use the software, run MuscleAnalysis.exe
+
 #### Inference
 To use the trained model to analyse a single image, run the following command:
 ```sh
