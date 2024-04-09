@@ -90,12 +90,12 @@ def infer_image(image, flip, mm_ratio, pixel_ratio, save_path):
     # load the aponeurosis model
     model_apo = load_model('.\\models\\model-apo2-nc.h5', custom_objects={'IoU': IoU})
     # load the fascicle model
-    modelF = load_model('.\\models\\model-fasc-WW-aunet.h5', custom_objects={'IoU': IoU})
+    modelF = load_model('.\\models\\model-fasc-WW-aunet111.h5', custom_objects={'IoU': IoU})
 
 
     # DEFINE SETTINGS
     apo_threshold = 0.15                    # Sensitivity threshold for detecting aponeuroses
-    fasc_threshold = 0.02                   # Sensitivity threshold for detecting fascicles
+    fasc_threshold = 0.015                   # Sensitivity threshold for detecting fascicles
     fasc_cont_thresh = 40                   # Minimum accepted contour length for fascicles (px) 
     flip = flip                             # If fascicles are oriented bottom-left to top-right, leave as 0. Otherwise set to 1
     min_width = 60                          # Minimum acceptable distance between aponeuroses
