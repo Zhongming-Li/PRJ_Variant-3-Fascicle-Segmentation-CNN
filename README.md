@@ -3,9 +3,16 @@
 A software application designed for the automated segmentation and prediction of muscle fascicles and aponeuroses in B-mode ultrasound images of muscles.
 
 ## Installation
-
-To set up the environment, run the following command:
-
+1. create and activate a new virtual environment
+2. run the following command:
+```sh
+conda install -c anaconda cudatoolkit==9.0
+```
+3. run the following command:
+```sh
+conda install -c anaconda cudnn==7.6.5
+```
+4. run the following command:
 ```sh
 pip install -r requirements.txt
 ```
@@ -13,7 +20,13 @@ pip install -r requirements.txt
 
 ## Usage
 #### Software
-To use the software, run MuscleAnalysis.exe
+To use the graphical user interface (GUI), run the following command:
+```sh
+python MuscleAnalysis.py
+```
+
+Alternatively, get the executable file from: https://drive.google.com/drive/folders/1ZVEWqXA3MNwNkfOXwu7zxDZFTEVnsUHk?usp=drive_link
+(The executable file is uploaded to Google Drive due to its large size. Note that it may take some time to run)
 
 #### Inference
 To use the trained model to analyse a single image, run the following command:
@@ -44,9 +57,11 @@ arg:
 
 
 
-
-
 ## References
+- **Repository:** [DL_Track](https://github.com/njcronin/DL_Track.git)
+- **Paper:** [Fully automated analysis of muscle architecture from B-mode ultrasound images with deep learning](https://arxiv.org/abs/2009.04790)
+
+
 
 - Repository: [DL Track](https://github.com/njcronin/DL_Track.git)
   - Paper: [Fully automated analysis of muscle architecture from B-mode ultrasound images with deep learning](https://arxiv.org/abs/2009.04790)
