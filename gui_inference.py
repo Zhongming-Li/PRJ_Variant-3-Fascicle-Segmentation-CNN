@@ -6,7 +6,7 @@ plt.style.use("ggplot")
 
 from skimage.transform import resize
 from skimage.morphology import skeletonize
-from scipy.signal import resample, savgol_filter, butter, filtfilt
+from scipy.signal import savgol_filter
 import cv2
 
 from keras import backend as K

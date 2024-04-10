@@ -1,6 +1,5 @@
 import tkinter as tk
 from tkinter import filedialog
-from matplotlib.backends.backend_agg import FigureCanvasAgg
 from PIL import Image, ImageTk
 
 from gui_inference import *
