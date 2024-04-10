@@ -88,9 +88,11 @@ def infer_image(image, flip, mm_ratio, pixel_ratio, save_path):
 
     # IMPORT THE TRAINED MODELS
     # load the aponeurosis model
-    model_apo = load_model('.\\models\\model-apo2-nc.h5', custom_objects={'IoU': IoU})
+    # model_apo = load_model('.\\models\\model-apo2-nc.h5', custom_objects={'IoU': IoU})
+    model_apo = load_model(os.path.join(os.path.dirname(__file__), 'models', 'model-apo2-nc.h5'), custom_objects={'IoU': IoU})
     # load the fascicle model
-    modelF = load_model('.\\models\\model-fasc-WW-aunet111.h5', custom_objects={'IoU': IoU})
+    # modelF = load_model('.\\models\\model-fasc-WW-aunet111.h5', custom_objects={'IoU': IoU})
+    modelF = load_model(os.path.join(os.path.dirname(__file__), 'models', 'model-fasc-WW-aunet111.h5'), custom_objects={'IoU': IoU})
 
 
     # DEFINE SETTINGS
