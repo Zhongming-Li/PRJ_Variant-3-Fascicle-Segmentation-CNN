@@ -27,7 +27,7 @@ pip install -r requirements.txt
 
 ## Usage
 #### Executable file using Git repo
-Run the MuscleAnalysis.exe in the **dist** directory after cloning the repository
+Run the MuscleAnalysis.exe in the **dist** directory after cloning the repository. 
 Check step 1 in the Installation instructions to make sure the files are correctly downloaded and both the **build** and **dist** folders are under the same directory.
 
 #### Executable file using Google Drive
