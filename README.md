@@ -2,6 +2,7 @@
 
 A software application designed for the automated segmentation and prediction of muscle fascicles and aponeuroses in B-mode ultrasound images of muscles.
 Github Repository: https://github.com/Zhongming-Li/PRJ_Variant-3-Fascicle-Segmentation-CNN.git
+Google Drive (.exe file): https://drive.google.com/drive/folders/1ZVEWqXA3MNwNkfOXwu7zxDZFTEVnsUHk?usp=sharing
 
 
 ## Usage - Software
@@ -9,12 +10,11 @@ Two sample images are provided in this repo for testing the software: [sample_im
 **Loading the executable file and performing inference may take some time**
 
 #### Executable file using Git repo
-Run the MuscleAnalysis.exe in the **dist** directory after cloning the repository. 
-Check step 1 in the Installation instructions to make sure the files are correctly downloaded and both the **build** and **dist** folders are under the same directory.
+Run the [MuscleAnalysis.exe](https://github.com/Zhongming-Li/PRJ_Variant-3-Fascicle-Segmentation-CNN/blob/main/dist/MuscleAnalysis.exe). 
+Check step 1 in the Installation instructions to make sure the files are correctly downloaded.
 
 #### Executable file using Google Drive
 Alternatively, get the executable file from: https://drive.google.com/drive/folders/1ZVEWqXA3MNwNkfOXwu7zxDZFTEVnsUHk?usp=drive_link
-This may take some time since the files are large. Make sure you download both the **build** and **dist** folders and put them under the same directory.
 
 #### GUI Python file
 Set up the environment by following the Installation instructions.
@@ -26,8 +26,8 @@ python MuscleAnalysis.py
 ## Installation
 1. clone this repository. Note that if you are downloading zip, make sure to check the file sizes of the following files：
     - all .h5 files under the directory "models" (larger than 50MB).
-    - dist/MuscleAnalysis.exe (422MB).
-    - build/MuscleAnalysis/MuscleAnalysis.pkg (422MB). <br>
+    - dist/MuscleAnalysis.exe (673MB).
+    - build/MuscleAnalysis/MuscleAnalysis.pkg (673MB). <br>
 
 If any of these files is only a few KB large, download the files by clicking the "Download raw file" button as shown below and put them in the exact same directories
 ![0c22412a6876352dd2888b0fd135fb1](https://github.com/Zhongming-Li/PRJ_Variant-3-Fascicle-Segmentation-CNN/assets/114877324/d4dc4de5-0f63-4b77-b2c0-3c77b7108a1a)
