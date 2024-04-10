@@ -1,6 +1,24 @@
 # PRJ: Muscle Analysis in B-mode Ultrasound Images
 
 A software application designed for the automated segmentation and prediction of muscle fascicles and aponeuroses in B-mode ultrasound images of muscles.
+Github Repository: https://github.com/Zhongming-Li/PRJ_Variant-3-Fascicle-Segmentation-CNN.git
+
+
+## Usage - Software
+#### Executable file using Git repo
+Run the MuscleAnalysis.exe in the **dist** directory after cloning the repository. 
+Check step 1 in the Installation instructions to make sure the files are correctly downloaded and both the **build** and **dist** folders are under the same directory.
+
+#### Executable file using Google Drive
+Alternatively, get the executable file from: https://drive.google.com/drive/folders/1ZVEWqXA3MNwNkfOXwu7zxDZFTEVnsUHk?usp=drive_link
+This may take a while since the files are large. Make sure you download both the **build** and **dist** folders and put them under the same directory.
+
+#### GUI Python file
+Set up the environment by following the Installation instructions.
+To use the graphical user interface (GUI) in python environment, run the following command:
+```sh
+python MuscleAnalysis.py
+```
 
 ## Installation
 1. clone this repository. Note that if you are downloading zip, make sure to check the file sizes of the following files：
@@ -25,23 +43,7 @@ conda install -c anaconda cudnn==7.6.5
 pip install -r requirements.txt
 ```
 
-
-## Usage
-#### Executable file using Git repo
-Run the MuscleAnalysis.exe in the **dist** directory after cloning the repository. 
-Check step 1 in the Installation instructions to make sure the files are correctly downloaded and both the **build** and **dist** folders are under the same directory.
-
-#### Executable file using Google Drive
-Alternatively, get the executable file from: https://drive.google.com/drive/folders/1ZVEWqXA3MNwNkfOXwu7zxDZFTEVnsUHk?usp=drive_link
-This may take a while since the files are large. Make sure you download both the **build** and **dist** folders and put them under the same directory.
-
-#### GUI Python file
-Set up the environment by following the Installation instructions.
-To use the graphical user interface (GUI) in python environment, run the following command:
-```sh
-python MuscleAnalysis.py
-```
-
+## Usage - Python
 #### Inference
 To use the trained model to analyse a single image, run the following command:
 ```sh
