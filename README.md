@@ -3,8 +3,15 @@
 A software application designed for the automated segmentation and prediction of muscle fascicles and aponeuroses in B-mode ultrasound images of muscles.
 
 ## Installation
-1. create and activate a new virtual environment
-2. run the following command:
+1. clone this repository. Note that if you are downloading zip, make sure to check the file sizes of the following files：
+    - all .h5 files under the directory "models" (larger than 50MB)
+    - dist/MuscleAnalysis.exe (422MB)
+    - build/MuscleAnalysis/MuscleAnalysis.pkg (422MB)
+   If any of these files is only a few KB large, download the files by clicking the "Download raw file" button as shown below and put them in the exact same directories
+![0c22412a6876352dd2888b0fd135fb1](https://github.com/Zhongming-Li/PRJ_Variant-3-Fascicle-Segmentation-CNN/assets/114877324/d4dc4de5-0f63-4b77-b2c0-3c77b7108a1a)
+
+2. create and activate a new virtual environment
+3. run the following command:
 ```sh
 conda install -c anaconda cudatoolkit==9.0
 ```
@@ -20,13 +27,16 @@ pip install -r requirements.txt
 
 ## Usage
 #### Software
-To use the graphical user interface (GUI), run the following command:
+Run the MuscleAnalysis.exe in the **dist** directory
+Make sure you download both the **build** and **dist** folders and put them under the same directory.
+
+Alternatively, get the executable file from: https://drive.google.com/drive/folders/1ZVEWqXA3MNwNkfOXwu7zxDZFTEVnsUHk?usp=drive_link
+Make sure you download both the **build** and **dist** folders and put them under the same directory.
+
+To use the graphical user interface (GUI) in python environment, run the following command:
 ```sh
 python MuscleAnalysis.py
 ```
-
-Alternatively, get the executable file from: https://drive.google.com/drive/folders/1ZVEWqXA3MNwNkfOXwu7zxDZFTEVnsUHk?usp=drive_link
-(The executable file is uploaded to Google Drive due to its large size. Note that it may take some time to run)
 
 #### Inference
 To use the trained model to analyse a single image, run the following command:
