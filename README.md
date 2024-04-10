@@ -5,7 +5,8 @@ Github Repository: https://github.com/Zhongming-Li/PRJ_Variant-3-Fascicle-Segmen
 
 
 ## Usage - Software
-Two sample images are provided in this repo for testing the software: 
+Two sample images are provided in this repo for testing the software: [sample_img01](https://github.com/Zhongming-Li/PRJ_Variant-3-Fascicle-Segmentation-CNN/blob/main/sample_img01.tif) and [sample_img02](https://github.com/Zhongming-Li/PRJ_Variant-3-Fascicle-Segmentation-CNN/blob/main/sample_img02.tif)
+
 #### Executable file using Git repo
 Run the MuscleAnalysis.exe in the **dist** directory after cloning the repository. 
 Check step 1 in the Installation instructions to make sure the files are correctly downloaded and both the **build** and **dist** folders are under the same directory.
@@ -61,7 +62,7 @@ arg:
 
 
 #### Training
-To train your own model, run the following command: [sample_img01](https://github.com/Zhongming-Li/PRJ_Variant-3-Fascicle-Segmentation-CNN/blob/main/sample_img01.tif) and [sample_img02](https://github.com/Zhongming-Li/PRJ_Variant-3-Fascicle-Segmentation-CNN/blob/main/sample_img02.tif)
+To train your own model, run the following command: 
 ```sh
 python train_segmentation.py --image_dir path/to/your/training/images --mask_dir path/to/your/training/masks --seg_type fascicle --model_type attention-u-net --model_name my_model
 ```
