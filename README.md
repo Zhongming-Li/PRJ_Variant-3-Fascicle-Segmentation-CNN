@@ -33,7 +33,7 @@ Check step 1 in the Installation instructions to make sure the files are correct
 
 #### Executable file using Google Drive
 Alternatively, get the executable file from: https://drive.google.com/drive/folders/1ZVEWqXA3MNwNkfOXwu7zxDZFTEVnsUHk?usp=drive_link
-Make sure you download both the **build** and **dist** folders and put them under the same directory.
+This may take a while since the files are large. Make sure you download both the **build** and **dist** folders and put them under the same directory.
 
 #### GUI Python file
 Set up the environment by following the Installation instructions.
