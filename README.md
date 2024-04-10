@@ -7,7 +7,7 @@ A software application designed for the automated segmentation and prediction of
     - all .h5 files under the directory "models" (larger than 50MB).
     - dist/MuscleAnalysis.exe (422MB).
     - build/MuscleAnalysis/MuscleAnalysis.pkg (422MB).
-   If any of these files is only a few KB large, download the files by clicking the "Download raw file" button as shown below and put them in the exact same directories
+If any of these files is only a few KB large, download the files by clicking the "Download raw file" button as shown below and put them in the exact same directories
 ![0c22412a6876352dd2888b0fd135fb1](https://github.com/Zhongming-Li/PRJ_Variant-3-Fascicle-Segmentation-CNN/assets/114877324/d4dc4de5-0f63-4b77-b2c0-3c77b7108a1a)
 
 2. create and activate a new virtual environment
@@ -26,13 +26,16 @@ pip install -r requirements.txt
 
 
 ## Usage
-#### Software
-Run the MuscleAnalysis.exe in the **dist** directory
-Make sure you download both the **build** and **dist** folders and put them under the same directory.
+#### Executable file using Git repo
+Run the MuscleAnalysis.exe in the **dist** directory after cloning the repository
+Check step 1 in the Installation instructions to make sure the files are correctly downloaded and both the **build** and **dist** folders are under the same directory.
 
+#### Executable file using Google Drive
 Alternatively, get the executable file from: https://drive.google.com/drive/folders/1ZVEWqXA3MNwNkfOXwu7zxDZFTEVnsUHk?usp=drive_link
 Make sure you download both the **build** and **dist** folders and put them under the same directory.
 
+#### GUI Python file
+Set up the environment by following the Installation instructions.
 To use the graphical user interface (GUI) in python environment, run the following command:
 ```sh
 python MuscleAnalysis.py
