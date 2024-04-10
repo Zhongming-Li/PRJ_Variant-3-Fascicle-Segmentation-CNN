@@ -1,3 +1,4 @@
 models/model-apo2-nc.h5 filter=lfs diff=lfs merge=lfs -text
 models/model-fasc-WW-aunet111.h5 filter=lfs diff=lfs merge=lfs -text
 models/model-fasc-WW-unet.h5 filter=lfs diff=lfs merge=lfs -text
+*.h5 filter=lfs diff=lfs merge=lfs -text
