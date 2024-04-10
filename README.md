@@ -74,11 +74,3 @@ arg:
 ## References
 - **Repository:** [DL_Track](https://github.com/njcronin/DL_Track.git)
 - **Paper:** [Fully automated analysis of muscle architecture from B-mode ultrasound images with deep learning](https://arxiv.org/abs/2009.04790)
-
-
-
-- Repository: [DL Track](https://github.com/njcronin/DL_Track.git)
-  - Paper: [Fully automated analysis of muscle architecture from B-mode ultrasound images with deep learning](https://arxiv.org/abs/2009.04790)
-
-
-
