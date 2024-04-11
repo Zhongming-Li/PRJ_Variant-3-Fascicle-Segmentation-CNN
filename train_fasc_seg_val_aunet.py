@@ -1,3 +1,6 @@
+# Training fascicle segmentation CNN with different training and validation dataset
+# Code partially adapted from: https://github.com/njcronin/DL_Track.git
+
 import os
 import numpy as np
 import matplotlib.pyplot as plt

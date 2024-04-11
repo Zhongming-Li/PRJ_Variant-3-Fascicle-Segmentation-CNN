@@ -1,3 +1,6 @@
+# Infer single image in python environment
+# Code partially adapted from: https://github.com/njcronin/DL_Track.git
+
 from __future__ import division 
 import os, argparse
 import numpy as np

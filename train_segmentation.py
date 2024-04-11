@@ -1,3 +1,6 @@
+# Training fascicle segmentation CNN with one whole dataset
+# Code partially adapted from: https://github.com/njcronin/DL_Track.git
+
 import os, argparse
 import numpy as np
 import matplotlib.pyplot as plt

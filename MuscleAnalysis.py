@@ -9,10 +9,10 @@ class ImageInferenceApp:
         self.root = root
         self.root.title("Image Inference App")
 
-        # Create widgets
         self.label = tk.Label(root, text="Select an image:")
         self.label.grid(row=0, column=0, sticky=tk.W)
-
+        
+        # Load input image
         self.load_button = tk.Button(root, text="Load Image", command=self.load_image)
         self.load_button.grid(row=1, column=0, sticky=tk.W)
 
@@ -53,12 +53,14 @@ class ImageInferenceApp:
         self.pixel_entry = tk.Entry(root)
         self.pixel_entry.grid(row=12, column=0, sticky=tk.W)
 
+        # Perform inference
         self.inference_button = tk.Button(root, text="Perform Inference", command=self.perform_inference)
         self.inference_button.grid(row=13, column=0, sticky=tk.W)
 
         self.result_label = tk.Label(root)
         self.result_label.grid(row=0, column=1, rowspan=12, columnspan=1, sticky=tk.W)
 
+        # Error message
         self.error_label = tk.Label(root)
         self.error_label.grid(row=13, column=1, columnspan=2, sticky=tk.W)
 
@@ -70,13 +72,11 @@ class ImageInferenceApp:
     def load_image(self):
         file_path = filedialog.askopenfilename()
         self.image_path = file_path
-        print(f"==========self image path: {file_path}")
         input_image = Image.open(file_path)
         input_image.thumbnail((300, 300))
         input_photo = ImageTk.PhotoImage(input_image)
         self.image_label.config(image=input_photo)
         self.image_label.image = input_photo
-        print("=========load image")
 
 
     def select_save_directory(self):
@@ -92,7 +92,6 @@ class ImageInferenceApp:
         
 
     def perform_inference(self):
-
         # Check if original image is uploaded
         if not hasattr(self, 'image_path'):
             self.error_label.config(text="Please load an image first.")
@@ -132,14 +131,11 @@ class ImageInferenceApp:
         except ValueError:
             self.error_label.config(text="Please enter the conversion ratio (pixels) as integers or floats.")
             return
-        
-        
-        
+                
         # Perform inference
         orientation = int(self.orientation_var.get())
         mm_ratio = float(self.mm_entry.get())
         pixel_ratio = float(self.pixel_entry.get())
-        self.error_label.config(text="Analyzing image...")
         result_image_path = infer_image(self.image_path, orientation, mm_ratio, pixel_ratio, self.save_path) 
 
         # Display the inferred image
@@ -194,4 +190,3 @@ if __name__ == "__main__":
     app = ImageInferenceApp(root)
     root.protocol("WM_DELETE_WINDOW", on_close)
     root.mainloop()
-    # main()
