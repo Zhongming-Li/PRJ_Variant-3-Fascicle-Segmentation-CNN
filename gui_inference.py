@@ -378,17 +378,21 @@ def infer_image(image, flip, mm_ratio, pixel_ratio, save_path):
                     x_low1.append(coordsX[0].astype('int32'))
                     x_high1.append(coordsX[-1].astype('int32'))
                     coords = np.array(list(zip(coordsX.astype('int32'), coordsY.astype('int32'))))
-                    plt.plot(coordsX,coordsY,':w', linewidth = 6)
+                    plt.plot(coordsX,coordsY,':w', linewidth = 6, alpha = 0.7)
 
         #########################################################################
         # DISPLAY THE RESULTS
     
         plt.imshow(img_copy, cmap='gray')
-        plt.plot(low_x,low_y_new, marker='p', color='w', linewidth = 15) # Plot the aponeuroses
-        plt.plot(upp_x,upp_y_new, marker='p', color='w', linewidth = 15)
-        
+        plt.plot(low_x,low_y_new, marker='p', color='w', linewidth = 15, alpha = 0.7) # Plot the aponeuroses
+        plt.plot(upp_x,upp_y_new, marker='p', color='w', linewidth = 15, alpha = 0.7)
+
         xplot = 125
         yplot = 250
+
+        if flip == 1:
+            plt.gca().invert_xaxis()  
+            xplot = img_copy.shape[1] - xplot
 
         # Store the results for each frame and normalise using scale factor (if calibration was done above)
         try:

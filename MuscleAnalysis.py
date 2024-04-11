@@ -92,7 +92,6 @@ class ImageInferenceApp:
         
 
     def perform_inference(self):
-        # if hasattr(self, 'image'):
 
         # Check if original image is uploaded
         if not hasattr(self, 'image_path'):
@@ -134,12 +133,13 @@ class ImageInferenceApp:
             self.error_label.config(text="Please enter the conversion ratio (pixels) as integers or floats.")
             return
         
-        # self.error_label.config(text="Analyzing image...")
+        
         
         # Perform inference
         orientation = int(self.orientation_var.get())
         mm_ratio = float(self.mm_entry.get())
         pixel_ratio = float(self.pixel_entry.get())
+        self.error_label.config(text="Analyzing image...")
         result_image_path = infer_image(self.image_path, orientation, mm_ratio, pixel_ratio, self.save_path) 
 
         # Display the inferred image
@@ -158,7 +158,6 @@ class ImageInferenceApp:
         self.error_label.config(text="")
         
 
-
     def clear_all(self):
         # Reset all input fields to their default state or clear their content
         self.image_path = ""
@@ -175,10 +174,24 @@ class ImageInferenceApp:
 
         self.error_label.config(text="")
 
+
+
+
 def main():
     root = tk.Tk()
     app = ImageInferenceApp(root)
+    root.protocol("WM_DELETE_WINDOW", on_close(root))
     root.mainloop()
 
 if __name__ == "__main__":
-    main()
+    root = tk.Tk()
+
+    def on_close():
+        # End the application when the window is closed
+        root.quit()
+        root.destroy()
+
+    app = ImageInferenceApp(root)
+    root.protocol("WM_DELETE_WINDOW", on_close)
+    root.mainloop()
+    # main()
