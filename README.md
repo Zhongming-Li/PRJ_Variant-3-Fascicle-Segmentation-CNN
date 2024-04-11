@@ -6,7 +6,7 @@ Google Drive (.exe file): https://drive.google.com/drive/folders/1ZVEWqXA3MNwNkf
 
 
 ## Usage - Software
-Two sample images are provided in this repo for testing the software: [sample_img01](https://github.com/Zhongming-Li/PRJ_Variant-3-Fascicle-Segmentation-CNN/blob/main/sample_img01.tif) and [sample_img02](https://github.com/Zhongming-Li/PRJ_Variant-3-Fascicle-Segmentation-CNN/blob/main/sample_img02.tif)
+Two sample images are provided in this repo for testing the software: [sample_img01](https://github.com/Zhongming-Li/PRJ_Variant-3-Fascicle-Segmentation-CNN/blob/main/sample_img01.tif) and [sample_img02](https://github.com/Zhongming-Li/PRJ_Variant-3-Fascicle-Segmentation-CNN/blob/main/sample_img02.tif) <br>
 **Loading the executable file and performing inference may take some time**
 
 #### Executable file using Git repo
