@@ -1,7 +1,7 @@
 # PRJ: Muscle Analysis in B-mode Ultrasound Images
 
 A software application designed for the automated segmentation and prediction of muscle fascicles and aponeuroses in B-mode ultrasound images of muscles.
-Github Repository: https://github.com/Zhongming-Li/PRJ_Variant-3-Fascicle-Segmentation-CNN.git
+Github Repository: https://github.com/Zhongming-Li/PRJ_Variant-3-Fascicle-Segmentation-CNN.git <br>
 Google Drive (.exe file): https://drive.google.com/drive/folders/1ZVEWqXA3MNwNkfOXwu7zxDZFTEVnsUHk?usp=sharing
 
 
