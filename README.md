@@ -79,3 +79,5 @@ arg:
 ## References
 - **Repository:** [DL_Track](https://github.com/njcronin/DL_Track.git)
 - **Paper:** [Fully automated analysis of muscle architecture from B-mode ultrasound images with deep learning](https://arxiv.org/abs/2009.04790)
+
+- **Dataset:** [Age-Related Reliability of B-Mode Analysis for Tailored Exosuit Assistance](https://www.mdpi.com/1424-8220/23/3/1670)
